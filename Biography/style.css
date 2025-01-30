@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+html{
+    background-color: #19142a;
+    color: white;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    box-sizing: border-box;
+}
+.left-list{
+    display: flex;
+    font-style: normal;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 17px;
+    font-weight: bold;   
+}
+.left-list a {
+    color: white;
+    text-decoration: none;
+
+}
+.left-list a:hover{
+    color: #d5213a;
+}
+.left-nav{
+    flex: 0.5;
+}
+.form-link{
+    text-decoration: none;
+}
+.form-link div{
+    background-color: #d5213a;
+    color: white;
+    padding: 15px 40px;
+    font-weight: bold;  
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+
+.form-link div:hover{
+    background-color: white;
+    color: #d5213a;
+}
+
+.head-sec{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 100px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.head-sec img{
+    width: 40%;
+}
+.head-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.head-text h2,.section-2 h2{
+    border: 2px solid #d5213a;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+.head-text span{
+    font-weight: bold;
+}
+.section-2{
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 50px 0px 100px 0px;
+}
+.section-2 div{
+   width: 50%; 
+   flex-direction: column;
+   display: flex;
+   gap: 30px;
+   align-items: center;
+
+}
+
+.section-2 div a{
+text-decoration: none; 
+color: #d5213a;
+text-align: center;
+}
+
+.b-top{
+    color: white;
+    text-decoration: none; 
+    text-align: center;
+
+
+}
+.b-top:hover{
+    color: #d5213a;
+}
+
+@media only screen and (max-width: 768px){
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .left-list{
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .section-2 div{
+        width: 80%; 
+        text-align: center;
+     }
+     .head-text h2,.section-2 h2{
+        width: 95%;
+        padding: 10px;
+    }
+    .section-2{
+        padding: 0px 0px 100px 0px;
+    }
+    .head-sec{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .head-sec img{
+        width: 100%;
+        
+    }
+    
+}

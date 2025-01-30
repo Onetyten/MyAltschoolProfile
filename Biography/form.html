@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlock Your Potential</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+        <div class="absolute-parent">
+            <div class="container">
+                <div class="flex-left">
+                    <div class="flex-left-shell">
+                        <img src="./images/FormImg.png" alt="logo">
+                        <h1>Learn highly sought after skills without hassle.</h1>
+                        <div class="left-links">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <p class="copy">2025 &copy; AltSchool Africa. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="flex-right ">
+                    <p class="signin-text">Already an AltScholar? <span>Sign In!</span> </p>
+                    <p class="signup-head">Signup</p>
+                    <p class="signup-p">Take the next steps to apply at AltSchool Africa</p>
+                    <form action="submit-form.php" method="POST">
+                        <div class="form-container">
+                            <div class="form-line">
+                                <div>
+                                    <label for="first-name">First name</label>
+                                    <input type="text" name="first-name" placeholder="First Name" id="first-name" autocomplete="name" required>
+                                </div>
+                                <div>
+                                    <label for="last-name">Last name</label>
+                                    <input type="text" name="last-name" placeholder="Last Name" id="last-name" autocomplete="name" required>
+                                </div>
+                            </div>
+    
+                            <div class="form-line">
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" placeholder="Email" id="email" required>
+
+                                </div>
+                                <div>
+                                    <label for="gender">Gender</label>
+                                    <select name="gender" id="">
+                                        <option value="greyed" disabled selected hidden class="greyed-select">Select gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select required>
+                                </div>
+    
+                            </div>
+    
+                            <div class="form-line">
+                                <div>
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" placeholder="Choose here" name="dob" id="dob" required></input>
+                                </div>
+
+                                <div>
+                                    <label for="Phone-Number">Phone Number</label>
+                                    <input type="tel" name="Phone-Number" placeholder="Phone Number" id="Phone-Number" required>
+                                </div>
+                            </div>
+
+                            <div class="form-line">
+                                <div>
+                                    <label for="first-name">Country of Residence</label>
+                                    <input type="text" id="country-residence" name="country-residence" placeholder="Country of Residence" required  autocomplete="country">
+
+                                </div>
+                                <div>
+                                    <label for="last-name">State of Residence</label>
+                                    <input type="text" id="state-residence" name="state-residence" placeholder="State of Residence" required autocomplete="address-level1">
+
+                                </div>
+                            </div>
+
+    
+                            <div class="form-line">
+                                <div class="password">
+                                    <label for="Password"  >Password</label>
+                                    <input type="password" name="Password" id="Password1" autocomplete="off" placeholder="Password" required>
+                                    <i class="fa-solid fa-eye" aria-label= "Toggle password visibility"></i>
+                                </div>
+ 
+                                <div class="password">
+                                    <label for="Password"  >Confirm Password</label>
+                                    <input type="password" name="Password" id="Password2" autocomplete="off" placeholder="Confirm Password" required>
+                                    <i class="fa-solid fa-eye" aria-label= "Toggle password visibility"></i>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-line">
+                                <div>
+                                    <label for="first-name">How did you hear about us?</label>
+                                    <input type="text" name="first-name" placeholder="Optional: let us know how you found us" id="first-name" autocomplete="name">
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="form-line">
+                                <p class="form-p">By clicking continue, I agree to <a href="">Terms of Use</a> and acknowledge that I have read the <a href="">Privacy Policy</a></p> 
+                            </div>
+    
+    
+                            <input type="submit" class="register" value="Signup ->">
+
+                            
+                            
+    
+        
+                            
+                            
+                        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    </form>
+                </div>
+    
+            </div>
+    
+        </div>
+        
+
+  </body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #19142a;
+    text-align: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-x: auto; /* Prevents content overflow */
+}
+
+h1 {
+    color: #d5213a;
+}
+
+/* Responsive Table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 600px; /* Prevents table from shrinking too much */
+}
+
+th, td {
+    border: 1px solid #19142a;
+    padding: 12px;
+    text-align: left;
+    white-space: nowrap; /* Keeps text in one line */
+}
+
+th {
+    background-color: #d5213a;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+.form-link{
+    text-decoration: none;
+}
+.form-link div{
+    background-color: #d5213a;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    width: 100px;  
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.form-link div:hover{
+    background-color: white;
+    color: #d5213a;
+}
+
+.sch {
+    background-color: #d5213a;
+    color: white;  
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .table-container {
+        overflow-x: auto; /* Enables horizontal scrolling on mobile */
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px; /* Smaller font for smaller screens */
+    }
+}

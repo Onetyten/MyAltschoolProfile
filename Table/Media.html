@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Media Elements</title>
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+        <div class="link">
+            <a href="./table.html" class="form-link">
+                <div>
+                    <p>Course Table</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Random things about me</h1>
+
+        <!-- Responsive Picture Element -->
+        <section class="media-section">
+            <h2>If you recognize some of the images below, we can be friends</h2>
+            <div class="gallery">
+
+                <picture>
+                    <source srcset="./urls/Images/Large screens/image.png" media="(min-width: 1024px)">
+                    <source srcset="./urls/Images/Large screens/image.png" media="(min-width: 768px)">
+                    <source srcset="./urls/Images/Large screens/image.png" media="(max-width: 767px)">
+                    <img src="./urls/Images/Large screens/image.png"alt="My Portrait">
+                </picture>
+                <picture>
+                    <source srcset="./urls/Images/Large screens/image2.png" media="(min-width: 1024px)">
+                    <source srcset="./urls/Images/Large screens/image2.png" media="(min-width: 768px)">
+                    <source srcset="./urls/Images/Large screens/image2.png" media="(max-width: 767px)">
+                    <img src="./urls/Images/Large screens/image2.png"alt="My Portrait">
+                </picture>
+                <picture>
+                    <source srcset="./urls/Images/Large screens/image3.jpg" media="(min-width: 1024px)">
+                    <source srcset="./urls/Images/Large screens/image3.jpg" media="(min-width: 768px)">
+                    <source srcset="./urls/Images/Large screens/image3.jpg" media="(max-width: 767px)">
+                    <img src="./urls/Images/Large screens/image3.jpg"alt="My Portrait">
+                </picture>
+                <picture>
+                    <source srcset="./urls/Images/Large screens/image4.png" media="(min-width: 1024px)">
+                    <source srcset="./urls/Images/Large screens/image4.png" media="(min-width: 768px)">
+                    <source srcset="./urls/Images/Large screens/image4.png" media="(max-width: 767px)">
+                    <img src="./urls/Images/Large screens/image4.png"alt="My Portrait">
+                </picture>
+                <picture>
+                    <source srcset="./urls/Images/Large screens/image5.jpg" media="(min-width: 1024px)">
+                    <source srcset="./urls/Images/Large screens/image5.jpg" media="(min-width: 768px)">
+                    <source srcset="./urls/Images/Large screens/image5.jpg" media="(max-width: 767px)">
+                    <img src="./urls/Images/Large screens/image5.jpg"alt="My Portrait">
+                </picture>
+                <picture>
+                    <source srcset="./urls/Images/Large screens/image6.png" media="(min-width: 1024px)">
+                    <source srcset="./urls/Images/Large screens/image6.png" media="(min-width: 768px)">
+                    <source srcset="./urls/Images/Large screens/image6.png" media="(max-width: 767px)">
+                    <img src="./urls/Images/Large screens/image6.png"alt="My Portrait">
+                </picture>
+                <picture>
+                    <source srcset="./urls/Images/Large screens/image7.jpg" media="(min-width: 1024px)">
+                    <source srcset="./urls/Images/Large screens/image7.jpg" media="(min-width: 768px)">
+                    <source srcset="./urls/Images/Large screens/image7.jpg" media="(max-width: 767px)">
+                    <img src="./urls/Images/Large screens/image7.jpg"alt="My Portrait">
+                </picture>
+                <picture>
+                    <source srcset="./urls/Images/Large screens/image8.jpg" media="(min-width: 1024px)">
+                    <source srcset="./urls/Images/Large screens/image8.jpg" media="(min-width: 768px)">
+                    <source srcset="./urls/Images/Large screens/image8.jpg" media="(max-width: 767px)">
+                    <img src="./urls/Images/Large screens/image8.jpg"alt="My Portrait">
+                </picture>
+            </div>
+            
+        </section>
+
+        <!-- Video Element -->
+        <section class="media-section">
+            <h2>Im developing a game</h2>
+            <video controls poster="images/video-thumbnail.jpg">
+                <source src="./urls/video/Record001(1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Audio Element -->
+        <section class="media-section">
+            <h2>Music I code to</h2>
+            <audio controls>
+                <source src="./urls/Audio/Disposal_Unit__Imperium_Mix_(128k).m4a" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d5213a" fill-opacity="1" d="M0,32L48,80C96,128,192,224,288,245.3C384,267,480,213,576,213.3C672,213,768,267,864,288C960,309,1056,299,1152,256C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+    </div>
+</body>
+</html>

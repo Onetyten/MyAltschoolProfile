@@ -1,0 +1,312 @@
+*{
+    font-family: "Lato", serif;
+    margin: 0;
+    padding: 0;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    transition: background-color 5000s ease-in-out 0s; 
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+    appearance: none;
+    margin: 0;
+}
+
+html{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    /* min-height: 100vh; */
+}
+
+
+.flex-left{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fffcf8;
+}
+
+form{
+    margin-top: 40px;
+}
+
+.flex-left-shell{
+    width: 85%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom:100px;
+}
+
+.left-links{
+    display: flex; 
+    justify-content: center; 
+    gap: 15px;
+}
+
+.left-links i{
+    color: #0367F2;
+    font-size: 16px;
+    margin: 50px 0px 30px 0px;
+}
+
+
+.flex-right{
+    padding: 20px;
+    margin-right: 35px;
+    flex: 1;
+}
+
+
+
+.flex-left img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0px;
+}
+
+.flex-left h1{
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    width: 70%;
+
+}
+
+.signin-text{
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+.signin-text span{
+    color: #0367F2;
+}
+.signup-head{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.signup-p{
+    color: #718096;
+    margin-top: 8px;
+}
+
+.form-line{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.form-line input,select{
+    border: 1px solid #F0F0F0;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    
+}
+
+.form-line div {
+    flex: 1; /* Makes each div inside .form-line take equal space */
+}
+
+.form-line input::placeholder{
+    color: #71849E;
+    font-weight: bold;
+}
+
+ select{
+    background-color: #ffffff;
+}
+
+.form-line label{
+    line-height: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 14px;
+    
+}
+
+
+select,option{
+  color:#000000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+input[type="date"] {
+    font-weight: bold;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+
+
+.form-line div{
+    display: flex;
+    flex-direction: column;
+}
+.form-line input:focus,select:focus{
+    outline: none;
+    border: 3px solid #0367F2;
+}
+
+.form-container{
+   display: flex;
+   flex-direction: column; 
+}
+
+
+
+
+input[type="password"]:focus{
+    background-color: white;
+}
+
+.register{
+    width: 100%;
+    background-color: #0367F2;
+    font-weight: 400;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 5px;
+    border:none;
+}
+
+.register:hover{
+    background-color: #0367F2;
+}
+.form-line a:hover{
+    color: #0367F2
+}
+
+.form-line a{
+    color: #0367F2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height:25px ;
+}
+
+.form-line p{
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+.activity{
+    width: 100%;
+    
+}
+
+.small-p{
+    display: none;
+    font-weight: 300;
+    color: #737373;
+    font-size: 16px;
+}
+.big-p{
+    display: block;
+
+}
+
+
+
+.password{
+    width: 100%;
+    appearance: textfield;
+    margin: 0;
+    position: relative;
+
+}
+
+.password-funnel{
+    width: 100%;
+}
+
+.password input{
+    width:100%;
+    margin: 0;
+}
+
+.password i{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right:10px;
+    bottom: 5px;
+    color: #71849E;
+    pointer-events: none;
+    
+}
+
+
+@media only screen and (max-width: 992px){
+    .flex-left{
+        display: none;
+    }
+    .flex-right{
+        padding: 40px;
+    }
+    .signup-head{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 756px){
+    .form-line{
+        flex-direction: column;
+    }
+    .flex-right{
+        padding: 30px;
+        margin: 0;
+    }
+    
+}
+
+
+
+
