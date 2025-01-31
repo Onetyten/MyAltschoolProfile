@@ -145,7 +145,7 @@ form{
 }
 
 .form-line div {
-    flex: 1; /* Makes each div inside .form-line take equal space */
+    flex: 1;
 }
 
 .form-line input::placeholder{
